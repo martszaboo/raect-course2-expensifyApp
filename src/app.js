@@ -11,15 +11,6 @@ import {addExpense} from './actions/expenses';
 
 const store= configureStore();
 
-
-store.dispatch(addExpense({description:'water bill',note:'note',amount:460}))
-store.dispatch(addExpense({description:'phone bill',note:'note',amount:680, createAt:1000}))
-store.dispatch(addExpense({description:'matrasse sale',note:'',amount:200, createAt:1230}))
-
-
-
-
-
 const jsx=(
     <Provider store={store}>
         <AppRouter />
